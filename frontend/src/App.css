@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background: #fff0f5;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app.dark {
+  background: #2d1b24;
+  color: #f0e6ea;
+}
+
+header {
+  background: #ff99cc;
+  padding: 15px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.app.dark header {
+  background: #cc6699;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.app.dark .container {
+  background: #3f2a35;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ffe6f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+input:focus {
+  border-color: #ff99cc;
+}
+
+.app.dark input {
+  border-color: #cc6699;
+  background: #4a3740;
+  color: #f0e6ea;
+}
+
+.input-group button {
+  background: #ff99cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.input-group button:hover {
+  background: #ff6699;
+}
+
+.app.dark .input-group button {
+  background: #cc6699;
+}
+
+.app.dark .input-group button:hover {
+  background: #b34d80;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  margin-bottom: 15px;
+  border: 1px solid #ffe6f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23ff99cc" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>') no-repeat 10px center;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #ff99cc;
+}
+
+.app.dark .search-bar {
+  border-color: #cc6699;
+  background: #4a3740 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23cc6699" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>') no-repeat 10px center;
+  color: #f0e6ea;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ffe6f0;
+  margin-bottom: 15px;
+  transition: border-bottom 0.3s;
+}
+
+.app.dark .tabs {
+  border-bottom: 1px solid #cc6699;
+}
+
+.tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.tabs button:hover {
+  color: #ff6699;
+}
+
+.tabs button.active {
+  color: #ff99cc;
+  border-bottom: 2px solid #ff99cc;
+}
+
+.app.dark .tabs button {
+  color: #d9b3c9;
+}
+
+.app.dark .tabs button:hover {
+  color: #ff99cc;
+}
+
+.app.dark .tabs button.active {
+  color: #ff99cc;
+  border-bottom: 2px solid #ff99cc;
+}
+
+.assignment-list {
+  list-style: none;
+}
+
+.assignment-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ffe6f0;
+  transition: border-bottom 0.3s;
+}
+
+.assignment-item:last-child {
+  border-bottom: none;
+}
+
+.app.dark .assignment-item {
+  border-bottom: 1px solid #cc6699;
+}
+
+.assignment-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #ff99cc;
+}
+
+.app.dark .assignment-item input[type="checkbox"] {
+  accent-color: #cc6699;
+}
+
+.assignment-item span {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+.assignment-item .completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.app.dark .assignment-item span {
+  color: #f0e6ea;
+}
+
+.app.dark .assignment-item .completed {
+  color: #b39fb0;
+}
+
+.assignment-item button {
+  background: none;
+  border: none;
+  color: #ff6699;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s;
+}
+
+.assignment-item button:hover {
+  color: #ff3366;
+}
+
+.app.dark .assignment-item button {
+  color: #ff99cc;
+}
+
+.app.dark .assignment-item button:hover {
+  color: #ff6699;
+}
+
+.delete-btn {
+  font-size: 1.2rem;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  padding: 20px;
+}
+
+.app.dark .empty-message {
+  color: #b39fb0;
+}
+
+.dark-mode-toggle {
+  display: block;
+  margin: 15px auto 0;
+  background: #ff99cc;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.dark-mode-toggle:hover {
+  background: #ff6699;
+}
+
+.app.dark .dark-mode-toggle {
+  background: #cc6699;
+}
+
+.app.dark .dark-mode-toggle:hover {
+  background: #b34d80;
+}
