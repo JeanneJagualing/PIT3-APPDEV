@@ -10,7 +10,7 @@ function App() {
   const [editTitle, setEditTitle] = useState('');
   const [darkMode, setDarkMode] = useState(false);
 
-  const apiUrl = 'http://127.0.0.1:8000/api/todos/';  // Update for Render later
+  const apiUrl = 'https://todo-backend-ul0j.onrender.com';  
 
   useEffect(() => {
     fetch(apiUrl)
