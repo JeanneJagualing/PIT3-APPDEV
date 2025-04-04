@@ -128,4 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ALLOWED_HOSTS = ['*']  # For Render
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Local React
+    "https://todo-backend-ul0j.onrender.com",
 ]
