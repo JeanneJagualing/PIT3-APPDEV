@@ -30,4 +30,3 @@ https://todo-backend-ul0j.onrender.com/api/
 https://todo-backend-ul0j.onrender.com
 - Frontend:
 https://pit-3-appdev.vercel.app/
-- Frontend: [Add Vercel link]
